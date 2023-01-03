@@ -35,8 +35,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Create the following environment variables:
 
-export ENVIRONMENT="insert value here"
-export DOCKER_REGISTRY_NAME="insert value here"
-export DOCKER_REGISTRY_URL="insert value here"
-export REGION="insert value here"
-export AWS_ACCOUNT_ROLE_FOR_ECR="insert value here"
+- ENVIRONMENT="insert value here"
+- DOCKER_REGISTRY_NAME="insert value here"
+- DOCKER_REGISTRY_URL="insert value here"
+- REGION="insert value here"
+- AWS_ACCOUNT_ROLE_FOR_ECR="insert value here"

@@ -36,7 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Create the following environment variables:
 
 - ENVIRONMENT
-- DOCKER_REGISTRY_NAME
-- DOCKER_REGISTRY_URL
+- ECR_REGISTRY_NAME
+- ECR_REGISTRY_URL
 - REGION
 - AWS_ACCOUNT_ROLE_FOR_ECR

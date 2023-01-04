@@ -27,10 +27,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Environment Setup
 
-Create the following environment variables:
+- Install direnv: https://direnv.net/
 
-- ENVIRONMENT
-- ECR_REGISTRY_NAME
-- ECR_REGISTRY_URL
-- REGION
-- AWS_ACCOUNT_ROLE_FOR_ECR
+- Create the following environment variables:
+  - ENVIRONMENT
+  - ECR_REGISTRY_NAME
+  - ECR_REGISTRY_URL
+  - REGION
+  - AWS_ACCOUNT_ROLE_FOR_ECR

@@ -6,10 +6,9 @@ build_image:
 	docker build -t $(REGISTRY_IMAGE_TAG) --build-arg ENVIRONMENT=$(ENVIRONMENT) .
 
 deploy_image:
-	aws sts assume-role --role-arn $(AWS_ACCOUNT_ROLE_FOR_ECR) --role-session-name ECRSession
 	aws ecr get-login-password --region $(REGION) | docker login --username AWS --password-stdin $(ECR_REGISTRY_URL)
 	$(eval REGISTRY_IMAGE_TAG := $(ECR_REGISTRY_URL)/$(ECR_REGISTRY_NAME):$(UUID))
 	docker push $(REGISTRY_IMAGE_TAG)
 
 deploy_fargate:
-	echo "running deploy_fargate"
+	sam deploy --parameter-overrides $(cat $envfile) PipelineId=$(UUID) --stack-name "nextjs-ecs" --resolve-s3 --region $(REGION) --capabilities "CAPABILITY_NAMED_IAM" --debug --no-fail-on-empty-changeset

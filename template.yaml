@@ -27,7 +27,7 @@ Parameters:
     Default: 80 #443
   HealthCheckPath:
     Type: String
-    Default: /health
+    Default: /api/health
   # for autoscaling
   MinContainers:
     Type: Number

@@ -25,7 +25,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Local Environment Setup
+## Environment Setup
 
 - Install jq: https://stedolan.github.io/jq/
 - Install sam: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html

@@ -24,7 +24,7 @@ Parameters:
     Default: 3000
   LoadBalancerPort:
     Type: Number
-    Default: 443
+    Default: 80 #443
   HealthCheckPath:
     Type: String
     Default: /health

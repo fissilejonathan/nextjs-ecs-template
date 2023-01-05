@@ -1,0 +1,10 @@
+{
+  "ECRRegistryUrl": "",
+  "MaxContainers": "",
+  "MinContainers": "",
+  "PrivateSubnetA": "",
+  "PrivateSubnetB": "",
+  "PublicSubnetA": "",
+  "PublicSubnetB": "",
+  "VPC": ""
+}

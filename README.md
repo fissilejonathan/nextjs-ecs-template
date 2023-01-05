@@ -25,6 +25,15 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Environment Setup
+## Local Environment Setup
 
 - Install jq: https://stedolan.github.io/jq/
+- Install docker
+
+## Deployment Steps
+
+Make sure docker is running. Fill in values in _parameters.json_.
+
+1. Run `make build_image ImageTag=$(uuidgen)`
+2. Run `make deploy_image ImageTag=[from step 1]`
+3. Run `make deploy_fargate ImageTag=[from step 1]`

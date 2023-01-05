@@ -1,5 +1,3 @@
-# Example on how to execute: make build_image ImageTag=$(uuidgen)
-
 ECRRegistryUrl = $(shell jq '.ECRRegistryUrl' parameters.json)
 Region = us-east-1
 

@@ -28,6 +28,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Local Environment Setup
 
 - Install jq: https://stedolan.github.io/jq/
+- Install sam: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html
 - Install docker
 
 ## Deployment Steps
